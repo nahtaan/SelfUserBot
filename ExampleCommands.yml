@@ -1,0 +1,31 @@
+commandName:
+  description: 'Description'
+  content: 'Content'
+  embeds:
+    1:
+      title: 'title'
+      description: 'description'
+      url: 'https://google.com'
+      color: '000000'
+      footer:
+        text: 'footer'
+        icon_url: 'https://example.com/icon'
+      image:
+        url: 'https://example.com/image'
+      thumbnail:
+        url: 'https://example.com/thumbnail'
+      video:
+        url: 'https://example.com/video'
+      author:
+        name: 'author'
+        url: 'https://example.com/author'
+        icon_url: 'https://example.com/icon'
+      fields:
+        1:
+          name: 'name'
+          value: 'value'
+          inline: false
+  buttons:
+    1:
+      label: 'label'
+      url: 'https://example.com'
