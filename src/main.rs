@@ -12,8 +12,8 @@ mod interaction_endpoint;
 mod handle_responses;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    if !fs::metadata("Config.yaml").is_ok() {
-        match File::create("Config.yaml") {
+    if !fs::metadata("Config.yml").is_ok() {
+        match File::create("Config.yml") {
             Ok(_) => {}
             Err(_) => {
                 println!("Unable to create new config file. Please check file permissions");
@@ -22,7 +22,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
     let settings = Config::builder()
-        .add_source(config::File::with_name("Config.yaml"))
+        .add_source(config::File::with_name("Config.yml"))
         .build()
         .unwrap();
 

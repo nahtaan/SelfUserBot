@@ -1,0 +1,6 @@
+discord:
+  publickey: publickey
+  token: token
+webserver:
+  address: address
+  port: port
